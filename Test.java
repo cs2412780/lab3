@@ -118,6 +118,9 @@ public class Test {
 			test.doForOneDay(i);
 			System.out.println("*********************");
 			System.out.println("Day: 3/" +i);
+			if(i % 3 == 1) {
+				System.out.println("shipments arrives..");
+			}
 			System.out.println("customers lost: " + test.getLost());
 			int[] wasteArr = test.getWaste();
 			int[] ordersOfEachFood = test.getOrdersOfEachFood();

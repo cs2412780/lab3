@@ -57,8 +57,9 @@ public class BunStack implements FoodStack {
 			}
 		}
 		waste += sizeBeforeOrganizing - (indexOfLastEntry + 1);
-		
-		QuickSort.quickSortByRecursion(arr, 0, indexOfLastEntry);
+		if(indexOfLastEntry > -1) {
+			QuickSort.quickSortByRecursion(arr, 0, indexOfLastEntry);
+		}
 		while(indexOfLastEntry >= 0) {
 			stack.push(arr[indexOfLastEntry]);
 			indexOfLastEntry--;
