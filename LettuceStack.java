@@ -1,7 +1,7 @@
 package lab3;
 
 import homework2.VectorStack;
-import quickSort.QuickSort;
+import integerSortingAlgorithm.IntegerSortingAlgorithm;
 
 /**
  *  The LettuceStack class stores food and organizes the food.
@@ -56,7 +56,7 @@ public class LettuceStack implements FoodStack {
 		}
 		waste += sizeBeforeOrganizing - (indexOfLastEntry + 1);
 		if(indexOfLastEntry > -1) {
-			QuickSort.quickSortByRecursion(arr, 0, indexOfLastEntry);
+			IntegerSortingAlgorithm.quickSortByRecursion(arr, 0, indexOfLastEntry);
 		}
 		while(indexOfLastEntry >= 0) {
 			stack.push(arr[indexOfLastEntry]);

@@ -1,8 +1,7 @@
 package lab3;
 
 import homework2.VectorStack;
-import quickSort.QuickSort;
-
+import integerSortingAlgorithm.IntegerSortingAlgorithm;
 
 /**
  * A stack to store tomato.
@@ -60,7 +59,7 @@ public class TomatoStack implements FoodStack {
 		waste += sizeBeforeOrganizing - (indexOfLastEntry + 1);
 		
 		if(indexOfLastEntry > -1) {
-			QuickSort.quickSortByRecursion(arr, 0, indexOfLastEntry);
+			IntegerSortingAlgorithm.quickSortByRecursion(arr, 0, indexOfLastEntry);
 		}
 		while(indexOfLastEntry >= 0) {
 			stack.push(arr[indexOfLastEntry]);
